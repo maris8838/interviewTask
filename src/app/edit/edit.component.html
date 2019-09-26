@@ -1,0 +1,45 @@
+<form action="/action_page.php" class="was-validated" [formGroup]='customerForm' (submit)='postForm()'>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class=" col-lg-5">
+                <div class="form-group">
+                    <label for="uname">CustomerName</label>
+                    <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname"
+                        required formControlName="name">
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+            </div>
+
+            <div class=" col-lg-5">
+                <div class="form-group">
+                    <label for="uage">Location</label>
+                    <input type="number" class="form-control" id="uage" placeholder="Enter age" age="uage" required
+                        formControlName="age">
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+            </div>
+
+            <div class=" col-lg-5">
+                <div class="form-group">
+                    <label for="ucity">Address</label>
+                    <input type="text" class="form-control" id="ucity" placeholder="Enter city" city="ucity" required
+                        formControlName="city">
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="class row">
+        <div class="class col-lg-12">
+            <div class="class form-group">
+                <button class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+
+    </div>
+</form>

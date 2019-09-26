@@ -1,0 +1,15 @@
+
+{
+    "personDetails":[
+        {
+            "id":145,
+            "name":"maris",
+            "city":"thoothukudi"
+        },
+        {
+            "id":21,
+            "name":"psanth",
+            "city":"vilupuram"
+        }
+    ]
+}

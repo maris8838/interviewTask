@@ -1,0 +1,35 @@
+
+<div class="container">
+<table class="table table-striped w-auto" style="height: 60%">
+  <thead>
+    <tr>
+      <th>S.no</th>
+      <th>CustomerName</th>
+      <th>age</th>
+      <th>city</th>
+      
+      <th><a routerLink="../../create" class="btn btn-primary btn-lg">Add +</a></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-info" *ngFor="let employee of customerList; let i = index;">
+      
+        <th scope="row">{{i+1}}</th>
+        <td>{{employee.name}}</td>
+        <td>{{employee.age}}</td>
+        <td>{{employee.city}}</td>
+        
+        <!-- <td>
+          <a routerLink="../../edit/{{employee._id}}" class="btn btn-light">edit</a>
+        </td> -->
+         <td><button class="btn btn-danger" (click)="deleteForm(employee._id)">Delete</button></td>
+
+        
+ 
+
+    </tr>
+
+  </tbody>
+
+</table>
+</div>
